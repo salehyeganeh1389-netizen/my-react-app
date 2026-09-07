@@ -26,7 +26,7 @@ export default function Todo({ add }) {
           </p>
           <button
           onClick={toggleTheme}
-          className={`px-5 py-2 rounded-[10px] transition duration-300 ${
+          className={`px-5 py-2 rounded-[10px] border-1 transition duration-300 ${
             isDark
               ? "bg-white text-black hover:bg-gray-300"
               : "bg-black text-white hover:bg-gray-800"
