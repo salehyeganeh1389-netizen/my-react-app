@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(32, 33, 34);
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+body.dark {
+  background-color: white;
+}
