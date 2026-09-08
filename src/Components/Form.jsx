@@ -4,7 +4,6 @@ export default function Form({ close, createAll }) {
   const title = useTaskStore((state) => state.title);
   const summary = useTaskStore((state) => state.summary);
 
-  const setTitle = useTaskStore((state) => state.setTitle);
   const setSummary = useTaskStore((state) => state.setSummary);
   const isDark = useTaskStore((state) => state.isDark);
 
@@ -20,35 +19,11 @@ export default function Form({ close, createAll }) {
 
         }`}
       >
-        <p
-          className={`text-[30px] ${
-            isDark ? "text-gray-800" : "text-gray-300"
-          }`}
-        >
-          New Task
-        </p>
+
 
         <form className="flex flex-col gap-5 mt-10">
 
-          <label
-            className={
-              isDark ? "text-gray-800" : "text-gray-300"
-            }
-          >
-            Title *
-          </label>
-
-          <input
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            className={`px-20 border py-1 rounded rounded-[8px] ${
-              isDark
-                ? "bg-gray-100 text-gray-800"
-                : "bg-zinc-900 text-gray-300"
-            }`}
-            placeholder="Task Title"
-            type="text"
-          />
+          
 
           <label
             className={
