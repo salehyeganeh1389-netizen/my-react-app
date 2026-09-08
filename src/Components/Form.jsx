@@ -15,7 +15,7 @@ export default function Form({ close, createAll }) {
     >
 
       <div
-        className={`w-[400px] h-[400px] space-y-[10px] fixed inset-0 m-auto z-50 rounded-[20px] p-10 ${
+        className={`w-100 h-100 space-y-2.5 fixed inset-0 m-auto z-50 rounded-[20px] p-10 ${
           isDark ? "bg-white" : "bg-[rgb(32,33,34)]"
 
         }`}
@@ -35,7 +35,7 @@ export default function Form({ close, createAll }) {
               isDark ? "text-gray-800" : "text-gray-300"
             }
           >
-            Title
+            Title *
           </label>
 
           <input
@@ -55,13 +55,13 @@ export default function Form({ close, createAll }) {
               isDark ? "text-gray-800" : "text-gray-300"
             }
           >
-            Summary
+            Summary  
           </label>
 
           <input
             value={summary}
             onChange={(e) => setSummary(e.target.value)}
-            className={`px-20 border-1 py-1 rounded rounded-[8px] ${
+            className={`px-20 border py-1 rounded rounded-[8px] ${
               isDark
                 ? "bg-gray-100 text-gray-800"
                 : "bg-zinc-900 text-gray-300"
@@ -72,7 +72,7 @@ export default function Form({ close, createAll }) {
 
         </form>
 
-        <div className="flex justify-between mt-[35px]">
+        <div className="flex justify-between mt-8.75">
 
           <button
             onClick={close}
