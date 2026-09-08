@@ -62,7 +62,7 @@ export default function Todo({ add }) {
                     className="text-red-600 text-[20] hover:bg-red-100 px-2 rounded rounded-[10px] transition duration-300
                      cursor-pointer hover:text-red-700 shadow-red-400 shadow-md"
                   >
-<i class="bi bi-x-lg"></i>
+                  <i class="bi bi-x-lg"></i>
                   </button>
 
                 </div>
@@ -89,7 +89,12 @@ export default function Todo({ add }) {
 
       </div>
 
-
+      <button
+        onClick={add}
+        className="bg-blue-500 text-white cursor-pointer px-50 py-1.5 rounded-lg hover:bg-blue-900 transition duration-300 mt-10"
+      >
+        New Task
+      </button>
 
     </div>
   );
